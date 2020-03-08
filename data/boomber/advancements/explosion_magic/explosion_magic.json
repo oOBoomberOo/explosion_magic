@@ -1,0 +1,17 @@
+{
+	"display": {
+		"title": "Explosion Magic",
+		"description": ":happy_megumin:",
+		"icon": {
+			"item": "minecraft:tnt"
+		},
+		"announce_to_chat": false,
+		"show_toast": false
+	},
+	"parent": "boomber:boomber",
+	"criteria": {
+		"trigger": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
