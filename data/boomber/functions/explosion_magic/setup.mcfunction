@@ -1,6 +1,8 @@
 scoreboard objectives add bb.variable dummy
+scoreboard objectives add bb.calc dummy
 scoreboard objectives add bb.const dummy
 scoreboard objectives add bb.enum dummy
+scoreboard objectives add bb.result dummy
 scoreboard objectives add bb.em.mana dummy
 scoreboard objectives add bb.em.max_mana dummy
 scoreboard objectives add bb.em.regen dummy
@@ -18,5 +20,7 @@ execute unless score #bb.em.current_uid bb.em.uid matches -2147483648..214748364
 #define tag global.ignore.kill
 #define tag global.ignore.gui
 #define tag global.ignore.pos
+
+function #boomber:explosion_magic/unit_test
 
 schedule function boomber:explosion_magic/event/mana_regeneration 1s
