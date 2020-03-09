@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_name",
-							"name": {"text": "Mana Gauge", "color": "aqua", "italic": false}
+							"name": {"translate": "boomber.explosion_magic.item.mana_gauge", "color": "aqua", "italic": false}
 						},
 						{
 							"function": "minecraft:set_nbt",

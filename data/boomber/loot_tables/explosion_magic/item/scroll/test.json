@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_name",
-							"name": {"text": "Test Spell", "color": "light_purple", "italic": false}
+							"name": {"translate": "boomber.explosion_magic.item.test_scroll", "color": "light_purple", "italic": false}
 						},
 						{
 							"function": "minecraft:set_nbt",

@@ -12,8 +12,9 @@ title @s actionbar [{"score": {"name": "#bb.em.casting", "objective": "bb.variab
 
 execute if score #bb.em.casting bb.variable = #bb.em.cast_time bb.variable run function boomber:explosion_magic/player/event/change_state/cast_spell
 
+# This must be call after 'cast_spell' because it would set #bb.em.casting and #bb.em.cast_time to 0 which would make the condition of the above command become true.
 execute if score #bb.em.min_tick bb.calc > @s bb.em.cast run function boomber:explosion_magic/player/event/change_state/unequip_scroll
-execute unless data entity @s SelectedItem.tag.ctc{traits: ["item", "magic_scroll/explosion_magic"]} run function boomber:explosion_magic/player/event/change_state/unequip_scroll
+execute unless predicate boomber:explosion_magic/selection/magic_scroll run function boomber:explosion_magic/player/event/change_state/unequip_scroll
 
 scoreboard players reset #bb.em.min_tick bb.calc
 scoreboard players reset #bb.em.casting bb.variable
