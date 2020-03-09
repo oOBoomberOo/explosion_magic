@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:item",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:compass",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {"text": "Mana Gauge", "color": "aqua", "italic": false}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{ctc: {id: 'mana_gauge', from: 'boomber:explosion_magic'}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
