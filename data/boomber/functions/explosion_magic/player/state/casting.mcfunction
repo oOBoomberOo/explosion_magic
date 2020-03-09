@@ -9,7 +9,6 @@ scoreboard players operation #bb.em.casting bb.variable = @s bb.em.cast
 execute store result score #bb.em.cast_time bb.variable run data get entity @s SelectedItem.tag.ctc.explosion_magic.cast_time
 
 title @s actionbar [{"score": {"name": "#bb.em.casting", "objective": "bb.variable"}, "color": "yellow"}, {"text": "/", "color": "white"}, {"score": {"name": "#bb.em.cast_time", "objective": "bb.variable"}, "color": "green"}]
-
 execute if score #bb.em.casting bb.variable = #bb.em.cast_time bb.variable run function boomber:explosion_magic/player/event/change_state/cast_spell
 
 # This must be call after 'cast_spell' because it would set #bb.em.casting and #bb.em.cast_time to 0 which would make the condition of the above command become true.
