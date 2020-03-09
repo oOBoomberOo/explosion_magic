@@ -1,11 +1,28 @@
 {
-	"condition": "minecraft:entity_properties",
-	"entity": "this",
-	"predicate": {
-		"equipment": {
-			"mainhand": {
-				"nbt": "{ctc: {id: 'mana_gauge', from: 'boomber:explosion_magic'}}"
+
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"mainhand": {
+						"nbt": "{ctc: {id: 'mana_gauge', from: 'boomber:explosion_magic'}}"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"offhand": {
+						"nbt": "{ctc: {id: 'mana_gauge', from: 'boomber:explosion_magic'}}"
+					}
+				}
 			}
 		}
-	}
+	]
 }

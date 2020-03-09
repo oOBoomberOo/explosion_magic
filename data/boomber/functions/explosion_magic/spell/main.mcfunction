@@ -1,0 +1,1 @@
+execute if entity @s[tag=boomber.explosion_magic.spell.aqua_party_trick] run function boomber:explosion_magic/spell/aqua_party_trick/main

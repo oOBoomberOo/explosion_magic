@@ -17,6 +17,7 @@ scoreboard objectives add bb.em.cast_tick dummy
 function boomber:explosion_magic/const/magic_casting
 function boomber:explosion_magic/const/mana
 function boomber:explosion_magic/enum/player
+function boomber:explosion_magic/enum/boolean
 
 #define entity #bb.em.global_pool Global Mana Pool
 execute unless score #bb.em.global_pool bb.em.mana matches -2147483648..2147483647 run scoreboard players operation #bb.em.global_pool bb.em.mana = #bb.em.mana_pool bb.const
