@@ -1,7 +1,7 @@
 {
 	"values": [
-		"boomber:explosion_magic/transfer_mana/normal_transfer",
-		"boomber:explosion_magic/transfer_mana/extreme_transfer",
-		"boomber:explosion_magic/transfer_mana/low_sender_mana"
+		"boomber:explosion_magic/unit_test/transfer_mana/normal_transfer",
+		"boomber:explosion_magic/unit_test/transfer_mana/extreme_transfer",
+		"boomber:explosion_magic/unit_test/transfer_mana/low_sender_mana"
 	]
 }
