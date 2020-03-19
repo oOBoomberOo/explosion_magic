@@ -14,7 +14,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{ctc: {explosion_magic: { cast_time: 5, cost: 5, rate: 1.00f, spell: 'aqua_party_trick' }, id: 'magic_scroll', from: 'boomber:explosion_magic', traits: ['item', 'magic_scroll', 'magic_scroll/explosion_magic']}}"
+							"tag": "{ctc: {explosion_magic: { cast_time: 100, cost: 5, rate: 1.00f, spell: 'aqua_party_trick' }, id: 'magic_scroll', from: 'boomber:explosion_magic', traits: ['item', 'magic_scroll', 'magic_scroll/explosion_magic']}}"
 						}
 					]
 				}

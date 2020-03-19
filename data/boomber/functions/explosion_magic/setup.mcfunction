@@ -10,9 +10,12 @@ scoreboard objectives add bb.em.sel_slot dummy
 scoreboard objectives add bb.em.mana dummy
 scoreboard objectives add bb.em.max_mana dummy
 scoreboard objectives add bb.em.regen dummy
-scoreboard objectives add bb.em.uid dummy
+scoreboard objectives add bb.em.uid.most dummy
+scoreboard objectives add bb.em.uid.least dummy
 scoreboard objectives add bb.em.cast minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add bb.em.cast_tick dummy
+scoreboard objectives add bb.em.timestamp dummy
+scoreboard objectives add bb.em.time dummy
 
 function boomber:explosion_magic/const/magic_casting
 function boomber:explosion_magic/const/mana
@@ -22,8 +25,8 @@ function boomber:explosion_magic/enum/boolean
 #define entity #bb.em.global_pool Global Mana Pool
 execute unless score #bb.em.global_pool bb.em.mana matches -2147483648..2147483647 run scoreboard players operation #bb.em.global_pool bb.em.mana = #bb.em.mana_pool bb.const
 
-#define entity #bb.em.current_uid
-execute unless score #bb.em.current_uid bb.em.uid matches -2147483648..2147483647 run scoreboard players set #bb.em.current_uid bb.em.uid 0
+#define entity #bb.em.current_time
+execute unless score #bb.em.current_time bb.em.time matches -2147483648..2147483647 run scoreboard players set #bb.em.current_time bb.em.time 0
 
 #> Global Ignoring Tag Conventions
 #define tag global.ignore

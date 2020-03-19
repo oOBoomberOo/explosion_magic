@@ -1,5 +1,4 @@
-scoreboard players operation @s bb.em.uid = #bb.em.current_uid bb.em.uid
-scoreboard players add #bb.em.current_uid bb.em.uid 1
+function boomber:explosion_magic/function/get_uid
 
 scoreboard players operation @s bb.em.mana = #bb.em.start_mana bb.const
 scoreboard players operation @s bb.em.max_mana = #bb.em.max_mana bb.const
