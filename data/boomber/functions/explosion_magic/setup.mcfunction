@@ -13,7 +13,6 @@ scoreboard objectives add bb.em.regen dummy
 scoreboard objectives add bb.em.uid.most dummy
 scoreboard objectives add bb.em.uid.least dummy
 scoreboard objectives add bb.em.cast minecraft.used:minecraft.carrot_on_a_stick
-scoreboard objectives add bb.em.cast_tick dummy
 scoreboard objectives add bb.em.timestamp dummy
 scoreboard objectives add bb.em.time dummy
 

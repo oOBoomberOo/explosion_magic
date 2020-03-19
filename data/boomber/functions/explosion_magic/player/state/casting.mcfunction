@@ -1,7 +1,7 @@
-scoreboard players operation #bb.em.min_tick bb.calc = @s bb.em.cast_tick
-scoreboard players operation #bb.em.min_tick bb.calc /= #bb.em.cos.gap bb.const
+function boomber:explosion_magic/time/delta_time
 
-scoreboard players add @s bb.em.cast_tick 1
+scoreboard players operation #bb.em.min_tick bb.calc = #bb.em.delta_time bb.em.time
+scoreboard players operation #bb.em.min_tick bb.calc /= #bb.em.cos.gap bb.const
 
 #define entity #bb.em.cast_time
 execute store result score #bb.em.cast_time bb.variable run data get entity @s SelectedItem.tag.ctc.explosion_magic.cast_time
@@ -15,3 +15,4 @@ execute unless predicate boomber:explosion_magic/selection/magic_scroll run func
 
 scoreboard players reset #bb.em.min_tick bb.calc
 scoreboard players reset #bb.em.cast_time bb.variable
+scoreboard players reset #bb.em.delta_time bb.em.time
