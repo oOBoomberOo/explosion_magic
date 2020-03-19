@@ -35,5 +35,4 @@ execute unless score #bb.em.current_time bb.em.time matches -2147483648..2147483
 #define tag global.ignore.pos
 
 function #boomber:explosion_magic/unit_test
-
-schedule function boomber:explosion_magic/event/mana_regeneration 1s
+function boomber:explosion_magic/event/mana_regeneration

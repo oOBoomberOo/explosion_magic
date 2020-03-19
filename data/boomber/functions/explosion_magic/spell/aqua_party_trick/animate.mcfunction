@@ -1,5 +1,7 @@
 execute anchored eyes run particle minecraft:bubble ^ ^ ^1 0.1 0.1 0.1 1 10
 
+effect give @s minecraft:slowness 1 4 false
+
 execute if score #bb.em.delta_time bb.em.time matches 0..30 run particle falling_water ~ ~ ~ 0.5 0.1 0.5 0 10
 execute if score #bb.em.delta_time bb.em.time matches 30..35 run particle falling_water ~ ~ ~ 0.5 0.1 0.5 0 10
 execute if score #bb.em.delta_time bb.em.time matches 35..40 run particle falling_water ~ ~0.143 ~ 0.5 0.1 0.5 0 10
