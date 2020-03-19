@@ -14,3 +14,12 @@ scoreboard players set #bb.em.base_regen bb.const 2
 scoreboard players set #bb.em.transfer.min_mana bb.const -2147483648
 #define entity #bb.em.transfer.max_mana
 scoreboard players set #bb.em.transfer.max_mana bb.const 2147483647
+
+#define entity #bb.em.exhaustion_unit Exhaustion level per mana
+scoreboard players set #bb.em.exhaustion_unit bb.const 20
+
+#define entity #bb.em.exhaustion_mana [ spell_cost + (exhaustion * exhaustion_mana) / 100] = mana cost
+scoreboard players set #bb.em.exhaustion_mana bb.const 1
+
+#define entity #bb.em.resting_rate
+scoreboard players set #bb.em.resting_rate bb.const 2

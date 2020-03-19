@@ -1,0 +1,2 @@
+execute if score @s bb.em.exhaustion matches 1.. run scoreboard players operation @s bb.em.exhaustion -= #bb.em.resting_rate bb.const
+execute if score @s bb.em.exhaustion matches ..-1 run scoreboard players set @s bb.em.exhaustion 0

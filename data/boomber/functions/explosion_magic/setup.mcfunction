@@ -13,8 +13,12 @@ scoreboard objectives add bb.em.regen dummy
 scoreboard objectives add bb.em.uid.most dummy
 scoreboard objectives add bb.em.uid.least dummy
 scoreboard objectives add bb.em.cast minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add bb.em.cast.combo dummy
+scoreboard objectives add bb.em.exhaustion dummy
 scoreboard objectives add bb.em.timestamp dummy
 scoreboard objectives add bb.em.time dummy
+
+scoreboard players set #100 bb.const 100
 
 function boomber:explosion_magic/const/magic_casting
 function boomber:explosion_magic/const/mana
