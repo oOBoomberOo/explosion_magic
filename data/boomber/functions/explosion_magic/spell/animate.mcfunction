@@ -10,3 +10,4 @@ scoreboard players operation #bb.em.progress bb.calc += #bb.em.progress.min bb.c
 function boomber:explosion_magic/player/display/progress_bar
 
 execute if predicate boomber:explosion_magic/spell/aqua_party_trick run function boomber:explosion_magic/spell/aqua_party_trick/animate
+execute if predicate boomber:explosion_magic/spell/miniature_explosion run function boomber:explosion_magic/spell/miniature_explosion/animate

@@ -1,0 +1,23 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:carrot_on_a_stick",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {"translate": "boomber.explosion_magic.item.scroll.miniature_explosion", "color": "light_purple", "italic": false}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{ctc: {explosion_magic: { cast_time: 300, cost: 50, spell: 'miniature_explosion' }, id: 'magic_scroll', from: 'boomber:explosion_magic', traits: ['item', 'magic_scroll', 'magic_scroll/explosion_magic']}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
