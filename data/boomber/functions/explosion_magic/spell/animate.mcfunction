@@ -2,6 +2,15 @@
 scoreboard players operation #bb.em.delta_time bb.em.time = #bb.em.current_time bb.em.time
 scoreboard players operation #bb.em.delta_time bb.em.time -= @s bb.em.timestamp
 
-title @s actionbar [{"score": {"name": "#bb.em.delta_time", "objective": "bb.em.time"}, "color": "aqua"}, {"text": "/", "color": "gray"}, {"score": {"name": "#bb.em.cast_time", "objective": "bb.variable"}, "color": "blue"}]
+# (current / max) * mapped_max
+#define entity #bb.em.progress
+scoreboard players operation #bb.em.progress bb.calc = #bb.em.delta_time bb.em.time
+scoreboard players operation #bb.em.progress bb.calc *= #bb.em.progress.precision bb.const
+scoreboard players operation #bb.em.progress bb.calc /= #bb.em.cast_time bb.variable
+scoreboard players operation #bb.em.progress bb.calc *= #bb.em.progress.diff bb.const
+scoreboard players operation #bb.em.progress bb.calc /= #bb.em.progress.precision bb.const
+scoreboard players operation #bb.em.progress bb.calc += #bb.em.progress.min bb.const
+
+function boomber:explosion_magic/player/display/progress_bar
 
 execute if predicate boomber:explosion_magic/spell/aqua_party_trick run function boomber:explosion_magic/spell/aqua_party_trick/animate

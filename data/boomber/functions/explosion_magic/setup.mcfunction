@@ -19,6 +19,7 @@ scoreboard objectives add bb.em.time dummy
 
 function boomber:explosion_magic/const/magic_casting
 function boomber:explosion_magic/const/mana
+function boomber:explosion_magic/const/progress_bar
 function boomber:explosion_magic/enum/player
 function boomber:explosion_magic/enum/boolean
 
